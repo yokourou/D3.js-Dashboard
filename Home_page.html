@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversity Dashboard</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="main-header">
+        <a target="_blank" href=""><i class="fab fa-instagram"><img src = "logo-gem.png" width="45" height="75"></i></a>
+
+        <div class="nav-button but-hol">
+      <span class="nos"></span>
+      <span class="ncs"></span>
+      
+      <a target="_blank" href="Bidoversity_dashboard.html"><span class="nbs"></span><div class="menu-button-text">>Dash</div></div></a>
+          
+          <div class="header-social">
+            <ul>
+                <li><a target="_blank" href=""><i class="fab fa-twitter"><img src = "reda.png" width="35" height="35"></i></a></li>
+                <li><a target="_blank" href=""><i class="fab fa-twitter"><img src = "IMG_6246.PNG" width="35" height="35"></i></a></li>
+                <li><a target="_blank" href=""><i class="fab fa-dribbble"><img src = "sami.png" width="35" height="35"></i></a></li>
+                <li><a target="_blank" href=""><i class="fab fa-instagram"><img src = "ikram.png" width="30" height="35"></i></a></li>
+            </ul>
+          </div>
+          <div class="folio-btn">
+            <a class="folio-btn-item ajax" href="Home_page.html" target="_blank"><span class="folio-btn-dot"></span><span class="folio-btn-dot"></span><span class="folio-btn-dot"></span><span class="folio-btn-dot"></span><span class="folio-btn-dot"></span><span class="folio-btn-dot"></span><span class="folio-btn-dot"></span><span class="folio-btn-dot"></span><span class="folio-btn-dot"></span></a>
+          </div>
+        </div>
+      
+        <div id="wrapper">
+          <div class="content-holder">
+            <div class="hero-wrap fl-wrap full-height scroll-con-sec">
+              
+              <div class="impulse-wrap">
+                <div class="mm-par-wrap">
+                  <div class="mm-parallax" data-tilt data-tilt-max="4" >
+                    <div class="overlay"></div>
+                    <div class="bg" data-bg="https://images.unsplash.com/photo-1499018658500-b21c72d7172b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" style="background-image: url(homepage.jpeg);">
+                      
+                    </div>
+                    
+                    <div class="hero-wrap-item fl-wrap">
+                      <div class="container"><div class="fl-wrap section-entry hiddec-anim" style="opacity: 1; ">
+                       <h1 class="BoardName">Biodiversity</h1>
+                        
+                        </div></div></div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div class="hero-corner hiddec-anim" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+              
+              <div class="hero-corner2 hiddec-anim" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+              
+              <div class="hero-corner3 hiddec-anim" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+              
+              <div class="hero-corner4 hiddec-anim" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"></div>
+              
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div class="dataset-context">
+        <h2>Contexte du Dataset</h2>
+        <p>
+            Le dataset analysé est issu d'une étude sur les <strong>risques climatiques et environnementaux</strong> par région. 
+            Il regroupe des informations clés permettant de comprendre les facteurs influençant la vulnérabilité des régions face aux changements climatiques 
+            et aux catastrophes naturelles. Ces données incluent des indicateurs tels que l'exposition, la vulnérabilité, la susceptibilité et la capacité d'adaptation 
+            des différentes régions du globe.
+        </p>
+        <p>
+            Chaque observation correspond à une région spécifique et regroupe des informations annuelles sur les risques environnementaux 
+            (<strong>WRI - World Risk Index</strong>), leur exposition à ces risques, ainsi que leur capacité à y faire face.
+        </p>
+    </div>
+    
+    <div class="dataset-keywords">
+        <h2>Signification des Mots-Clés</h2>
+        <ul>
+            <li><strong>Region :</strong> Nom de la région étudiée.</li>
+            <li><strong>WRI (World Risk Index) :</strong> Indicateur global qui mesure la probabilité d'une catastrophe naturelle combinée à la vulnérabilité sociale et économique de la région.</li>
+            <li><strong>Exposure :</strong> Niveau d'exposition aux risques climatiques (inondations, sécheresses, etc.).</li>
+            <li><strong>Vulnerability :</strong> Vulnérabilité globale de la région, qui intègre des facteurs socio-économiques.</li>
+            <li><strong>Susceptibility :</strong> Sensibilité d'une région aux risques, en fonction des infrastructures et des services de base.</li>
+            <li><strong>Lack of Coping Capabilities :</strong> Manque de moyens ou de ressources pour faire face à une catastrophe.</li>
+            <li><strong>Lack of Adaptive Capacities :</strong> Faible capacité à s'adapter aux changements climatiques à long terme.</li>
+            <li><strong>Year :</strong> Année à laquelle les données sont collectées.</li>
+            <li><strong>Categories (Exposure, WRI, etc.) :</strong> Classes ou catégories qui regroupent les régions en fonction des indicateurs principaux.</li>
+        </ul>
+    </div>
+    
+    <div class="dashboard-dimensions">
+        <h2>Dimensions du Dashboard</h2>
+        <p>
+            Le dashboard conçu pour visualiser ce dataset intègre plusieurs dimensions interactives :
+        </p>
+        <ul>
+            <li><strong>Carte Choroplèthe :</strong> Représente les régions en fonction de leur indice WRI et de leur niveau d'exposition.</li>
+            <li><strong>Graphiques en Barres :</strong> Comparaison des valeurs comme la vulnérabilité ou la susceptibilité par région.</li>
+            <li><strong>Graphiques Linéaires :</strong> Évolution des indicateurs par région sur plusieurs années.</li>
+        </ul>
+    </div>
+    <div class="dashboard-dimensions">
+        <h3>Membres</h3>
+        <p>Ce travail a été fait par :</p>
+        <ul>
+            <li>Reda Lamnouar</li>
+            <li>Youness KOUROU</li>
+            <li>Ikram FELLA
+            </li>
+            <li>Sammy Govin</li>
+        </ul>
+    </div>
+   
+
+
+      
+
+    <script src="script1.js"></script>
+</body>
+</html>
